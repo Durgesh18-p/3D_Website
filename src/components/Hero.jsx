@@ -25,8 +25,10 @@ const Hero = () => {
 
   useGSAP(() => {
     gsap.to(".hero-title", {
+      y: -20,
       opacity: 1,
       delay: 2,
+      stagger: 0.2,
     });
 
     gsap.to("#cta", {
@@ -39,7 +41,18 @@ const Hero = () => {
   return (
     <section className="w-full nav-height bg-black relative">
       <div className="h-5/6 w-full flex-col flex-center">
-        <p className="hero-title">iPhone 15 Pro</p>
+        <p className="">
+          <span className="hero-title">i</span>
+          <span className="hero-title">P</span>
+          <span className="hero-title">h</span>
+          <span className="hero-title">o</span>
+          <span className="hero-title">n</span>
+          <span className="hero-title">e</span>
+          <span className="m-2 hero-title">15</span>
+          <span className="hero-title">P</span>
+          <span className="hero-title">r</span>
+          <span className="hero-title">o</span>
+        </p>
         <div className="md:10/12 w-9/12">
           <video
             autoPlay
